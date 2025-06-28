@@ -11,21 +11,21 @@ const SupportServices: React.FC<SupportServicesProps> = ({ setCurrentView }) => 
 
   const emergencyContacts = [
     {
-      name: "National Domestic Violence Hotline",
-      phone: "1-800-799-7233",
-      description: "24/7 confidential support for domestic violence survivors",
+      name: "National Police Service",
+      phone: "999 or 112",
+      description: "Emergency police services for immediate danger situations",
       available: "24/7"
     },
     {
-      name: "RAINN National Sexual Assault Hotline",
-      phone: "1-800-656-4673",
-      description: "24/7 support for sexual assault survivors",
+      name: "Gender Violence Recovery Centre",
+      phone: "0709 674 674",
+      description: "24/7 crisis support and counseling for GBV survivors",
       available: "24/7"
     },
     {
-      name: "Crisis Text Line",
-      phone: "Text HOME to 741741",
-      description: "24/7 crisis support via text message",
+      name: "Childline Kenya",
+      phone: "116",
+      description: "Free helpline for children in distress or danger",
       available: "24/7"
     }
   ];
@@ -33,79 +33,124 @@ const SupportServices: React.FC<SupportServicesProps> = ({ setCurrentView }) => 
   const supportServices = [
     {
       id: 1,
-      name: "Women's Crisis Center",
+      name: "Coalition on Violence Against Women (COVAW)",
       category: "counseling",
-      address: "123 Main Street, Downtown",
-      phone: "(555) 123-4567",
-      website: "www.womenscrisis.org",
-      services: ["Individual Counseling", "Group Therapy", "Legal Advocacy", "Emergency Shelter"],
-      hours: "Mon-Fri 9AM-5PM, Emergency 24/7",
-      description: "Comprehensive support services for women experiencing domestic violence and sexual assault."
+      address: "Nairobi, Kenya - Multiple locations",
+      phone: "0722 186 202",
+      website: "www.covaw.or.ke",
+      services: ["Counseling Services", "Legal Aid", "Safe Houses", "Economic Empowerment"],
+      hours: "Mon-Fri 8AM-5PM",
+      description: "Leading organization providing comprehensive support to survivors of gender-based violence across Kenya."
     },
     {
       id: 2,
-      name: "Legal Aid Society",
+      name: "Federation of Women Lawyers Kenya (FIDA)",
       category: "legal",
-      address: "456 Justice Ave, Legal District",
-      phone: "(555) 987-6543",
-      website: "www.legalaid.org",
-      services: ["Restraining Orders", "Divorce/Custody", "Immigration", "Housing"],
-      hours: "Mon-Fri 8AM-6PM",
-      description: "Free legal services for survivors of domestic violence and sexual assault."
+      address: "Nairobi, Mombasa, Kisumu, Eldoret",
+      phone: "0722 751 272",
+      website: "www.fidakenya.org",
+      services: ["Legal Representation", "Legal Aid", "Court Accompaniment", "Legal Education"],
+      hours: "Mon-Fri 8AM-5PM",
+      description: "Provides free legal services to women and children, specializing in family law and GBV cases."
     },
     {
       id: 3,
-      name: "Safe Haven Shelter",
-      category: "housing",
-      address: "Confidential Location",
-      phone: "(555) 456-7890",
-      website: "www.safehavenshelter.org",
-      services: ["Emergency Shelter", "Transitional Housing", "Case Management", "Children's Services"],
-      hours: "24/7 Intake",
-      description: "Safe, confidential housing for survivors and their children."
+      name: "Nairobi Women's Hospital - Gender Violence Recovery Centre",
+      category: "medical",
+      address: "Hurlingham, Nairobi",
+      phone: "0709 674 674",
+      website: "www.nairobiwomenshospital.org",
+      services: ["Medical Care", "Counseling", "Legal Support", "Safe Shelter"],
+      hours: "24/7 Emergency Services",
+      description: "Comprehensive medical and psychosocial support for survivors of sexual and gender-based violence."
     },
     {
       id: 4,
-      name: "Healing Together Support Groups",
+      name: "Usikimye",
       category: "counseling",
-      address: "789 Community Center Dr",
-      phone: "(555) 234-5678",
-      website: "www.healingtogether.org",
-      services: ["Survivor Support Groups", "Art Therapy", "Trauma Recovery", "Peer Support"],
-      hours: "Various times, call for schedule",
-      description: "Peer-led support groups and therapeutic activities for survivors."
+      address: "Nairobi, Kenya",
+      phone: "0800 720 553",
+      website: "www.usikimye.or.ke",
+      services: ["Crisis Counseling", "Support Groups", "Referral Services", "Community Outreach"],
+      hours: "Mon-Fri 8AM-6PM",
+      description: "Provides psychosocial support and counseling services to survivors of sexual violence."
     },
     {
       id: 5,
-      name: "Financial Empowerment Center",
-      category: "financial",
-      address: "321 Economic Way, Business District",
-      phone: "(555) 345-6789",
-      website: "www.financialempowerment.org",
-      services: ["Financial Counseling", "Job Training", "Credit Repair", "Benefits Assistance"],
+      name: "Wangu Kanja Foundation",
+      category: "advocacy",
+      address: "Nairobi, Kenya",
+      phone: "0722 794 411",
+      website: "www.wangukanja.org",
+      services: ["Advocacy", "Legal Support", "Awareness Campaigns", "Policy Reform"],
       hours: "Mon-Fri 9AM-5PM",
-      description: "Financial literacy and empowerment services for survivors."
+      description: "Advocates for justice and policy reform while supporting survivors of gender-based violence."
     },
     {
       id: 6,
-      name: "Children's Advocacy Center",
+      name: "Cradle - The Children Foundation",
       category: "children",
-      address: "654 Child-Friendly Lane",
-      phone: "(555) 567-8901",
-      website: "www.childrenadvocacy.org",
-      services: ["Child Counseling", "Family Therapy", "School Advocacy", "Play Therapy"],
-      hours: "Mon-Fri 8AM-6PM",
-      description: "Specialized services for children who have experienced or witnessed violence."
+      address: "Nairobi, Kenya",
+      phone: "0722 296 173",
+      website: "www.cradle.co.ke",
+      services: ["Child Protection", "Counseling", "Legal Support", "Rehabilitation"],
+      hours: "Mon-Fri 8AM-5PM",
+      description: "Protects children from abuse and provides comprehensive support services."
+    },
+    {
+      id: 7,
+      name: "Ujamaa Centre",
+      category: "housing",
+      address: "Nairobi, Kenya",
+      phone: "0722 518 674",
+      website: "www.ujamaacentre.org",
+      services: ["Safe Shelter", "Counseling", "Skills Training", "Reintegration Support"],
+      hours: "24/7 Intake",
+      description: "Provides safe accommodation and rehabilitation services for women and children survivors."
+    },
+    {
+      id: 8,
+      name: "Kimbilio Trust",
+      category: "housing",
+      address: "Nairobi, Kenya",
+      phone: "0722 671 681",
+      website: "www.kimbilio.org",
+      services: ["Emergency Shelter", "Counseling", "Legal Aid", "Economic Empowerment"],
+      hours: "24/7 Emergency",
+      description: "Offers safe shelter and comprehensive support to women and children fleeing violence."
+    },
+    {
+      id: 9,
+      name: "Msichana Empowerment Kuria",
+      category: "advocacy",
+      address: "Migori County, Kenya",
+      phone: "0722 123 456",
+      website: "www.msichana.org",
+      services: ["FGM Prevention", "Education Support", "Legal Aid", "Community Mobilization"],
+      hours: "Mon-Fri 8AM-5PM",
+      description: "Focuses on ending FGM and supporting girls' education in Kuria community."
+    },
+    {
+      id: 10,
+      name: "Centre for Rights Education and Awareness (CREAW)",
+      category: "legal",
+      address: "Nairobi, Kenya",
+      phone: "0722 386 317",
+      website: "www.creawkenya.org",
+      services: ["Legal Aid", "Human Rights Education", "Policy Advocacy", "Research"],
+      hours: "Mon-Fri 8AM-5PM",
+      description: "Promotes and protects women's human rights through legal aid and advocacy."
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Services', icon: <Heart className="h-5 w-5" /> },
-    { id: 'counseling', name: 'Counseling & Therapy', icon: <Users className="h-5 w-5" /> },
+    { id: 'counseling', name: 'Counseling & Support', icon: <Users className="h-5 w-5" /> },
     { id: 'legal', name: 'Legal Services', icon: <Shield className="h-5 w-5" /> },
+    { id: 'medical', name: 'Medical Services', icon: <Heart className="h-5 w-5" /> },
     { id: 'housing', name: 'Housing & Shelter', icon: <MapPin className="h-5 w-5" /> },
-    { id: 'financial', name: 'Financial Support', icon: <MessageCircle className="h-5 w-5" /> },
-    { id: 'children', name: 'Children Services', icon: <Heart className="h-5 w-5" /> }
+    { id: 'children', name: 'Children Services', icon: <Users className="h-5 w-5" /> },
+    { id: 'advocacy', name: 'Advocacy & Rights', icon: <MessageCircle className="h-5 w-5" /> }
   ];
 
   const filteredServices = supportServices.filter(service => {
@@ -120,9 +165,9 @@ const SupportServices: React.FC<SupportServicesProps> = ({ setCurrentView }) => 
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Support Services</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Support Services in Kenya</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Find local support services, counseling, legal aid, and resources to help you on your journey to safety and healing.
+            Find local support services, counseling, legal aid, and resources across Kenya to help you on your journey to safety and healing.
           </p>
         </div>
 
@@ -253,29 +298,64 @@ const SupportServices: React.FC<SupportServicesProps> = ({ setCurrentView }) => 
           </div>
         )}
 
-        {/* Additional Resources */}
+        {/* County-specific Resources */}
         <div className="mt-12 bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Resources</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">County-Specific Resources</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">Nairobi County</h3>
+              <ul className="space-y-2 text-gray-600 text-sm">
+                <li>• Nairobi Women's Hospital GVRC</li>
+                <li>• COVAW Nairobi Office</li>
+                <li>• FIDA Kenya Headquarters</li>
+                <li>• Ujamaa Centre</li>
+                <li>• Kimbilio Trust</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">Mombasa County</h3>
+              <ul className="space-y-2 text-gray-600 text-sm">
+                <li>• FIDA Mombasa Branch</li>
+                <li>• Coast General Hospital</li>
+                <li>• Mombasa Women's Group</li>
+                <li>• Pwani University Legal Aid</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">Kisumu County</h3>
+              <ul className="space-y-2 text-gray-600 text-sm">
+                <li>• FIDA Kisumu Branch</li>
+                <li>• Jaramogi Oginga Odinga Hospital</li>
+                <li>• Lake Region Women's Network</li>
+                <li>• Kisumu Medical & Education Trust</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* National Resources */}
+        <div className="mt-8 bg-white rounded-lg shadow-lg p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">National Resources & Hotlines</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Online Resources</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">Government Services</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>• National Coalition Against Domestic Violence</li>
-                <li>• RAINN (Rape, Abuse & Incest National Network)</li>
-                <li>• Love Is Respect (Teen Dating Abuse)</li>
-                <li>• The Hotline (National Domestic Violence Hotline)</li>
+                <li>• National Gender and Equality Commission</li>
+                <li>• Ministry of Public Service and Gender</li>
+                <li>• National Council for Children's Services</li>
+                <li>• Judiciary Gender Justice Department</li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-3">Safety Planning</h3>
               <p className="text-gray-600 mb-3">
-                Creating a safety plan is important for anyone experiencing violence. Our resources can help you:
+                Creating a safety plan is important for anyone experiencing violence. Consider:
               </p>
               <ul className="space-y-1 text-gray-600">
-                <li>• Plan for emergencies</li>
-                <li>• Identify safe places to go</li>
-                <li>• Gather important documents</li>
-                <li>• Build a support network</li>
+                <li>• Identifying safe places in your community</li>
+                <li>• Keeping important documents secure</li>
+                <li>• Building a trusted support network</li>
+                <li>• Knowing emergency contact numbers</li>
               </ul>
             </div>
           </div>
